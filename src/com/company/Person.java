@@ -63,12 +63,22 @@ public class Person {
             final Person other = (Person) o;
             if ((this.firstName == null) ? (other.firstName == null) : this.firstName.equals(other.firstName)) {
                 if (this.age == other.age) {
-                    result = true;
+
+                    if ((this.secondName == other.secondName)) {
+                        if (this.degree == other.degree) {
+                            if (this.firstName == other.firstName) {
+                                if (this.student == other.student) {
+                                    return true;
+                                }
+                            }
+                        }
+                    }
                 }
-            }
+                            }
         }
         return result;
     }
+
 
     @Override
     public int hashCode() {
