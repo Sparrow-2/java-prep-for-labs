@@ -16,7 +16,7 @@ public class Main {
         P2.setFirstName("Tom");
         P2.setSecondName("EL");
         P2.setDegree("telekom");
-        P2.setStudent(false);
+        P2.setStudent(true);
         System.out.println(P2.equals(P1));
         System.out.println(P1.hashCode());
         System.out.println(P2.hashCode());

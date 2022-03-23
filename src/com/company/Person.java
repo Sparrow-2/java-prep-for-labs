@@ -62,20 +62,15 @@ public class Person {
         } else {
             final Person other = (Person) o;
             if ((this.firstName == null) ? (other.firstName == null) : this.firstName.equals(other.firstName)) {
-                if (this.age == other.age) {
+                if (this.age == other.age && this.secondName == other.secondName && this.degree == other.degree && this.firstName == other.firstName && this.student == other.student) {
 
-                    if ((this.secondName == other.secondName)) {
-                        if (this.degree == other.degree) {
-                            if (this.firstName == other.firstName) {
-                                if (this.student == other.student) {
-                                    return true;
-                                }
-                            }
-                        }
-                    }
+
+                    result = true;
+
+
                 }
-                            }
-        }
+
+            }}
         return result;
     }
 
